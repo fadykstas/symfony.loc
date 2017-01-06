@@ -1,0 +1,11 @@
+ {#app/Resources/views/blog/show_blog.html.twig#}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+    <p>sessionId: {{ session_id }} </p>
+    <h1>Prev page <a href="{{ url_prev }}">{{ page_prev }}</a></h1>
+    <h1>Next page <a href="{{ url_next }}">{{ page_next }}</a></h1>
+{% endblock %}
