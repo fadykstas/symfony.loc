@@ -1,0 +1,7 @@
+{# app/Resources/views/task/success.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Your have successfully created task!</h1>
+    <a href="{{ path('task_new') }}{% if action is not null %}{{ action }}{% endif %}">Create another task</a>
+{% endblock %}

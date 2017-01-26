@@ -1,0 +1,15 @@
+{# app/Resources/views/task/new.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form_start(
+        form
+    ) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+{% endblock %}
+
+{#
+    {{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
+    {{ form_start(contact, {attr: {novalidate: 'novalidate'}}) }}
+#}

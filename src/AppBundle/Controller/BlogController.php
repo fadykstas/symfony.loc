@@ -32,6 +32,8 @@ class BlogController extends Controller
             throw $this->createNotFoundException('The product does not exist');
         } else if ($page == 200) {
             throw new \Exception('Something went wrong!');
+        } else if ($page == 300) {
+            throw $this->createAccessDeniedException('No access');
         }
 
         $page = array(
